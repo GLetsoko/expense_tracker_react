@@ -1,38 +1,154 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower:200,300,400,500,600,700,800,900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  font-family: "Indie Flower", cursive;
+  background-color: #fdfcfc;
+  color: #504e4e;
+  margin: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  position: absolute;
+  display: flex;
+  margin: 30px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container {
+  position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0;
+  height: 440px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.spending {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.balance {
+  padding: 30px;
+  /* width: 100%; */
   color: white;
+  background-color: #f84158;
+  border-radius: 15px;
+}
+.exp-inc {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  padding: 30px;
+  width: 320px;
+  border-radius: 15px;
+  color: white;
+  background-color: #51cfce;
 }
 
-.App-link {
-  color: #61dafb;
+.list {
+  max-width: 100%;
+  margin: 40px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.item-list-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 0.6rem;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  background-color: #fdfcfc;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+.item-list-box.minus {
+  border-right: 6px solid red;
+}
+
+.item-list-box.plus {
+  border-right: 6px solid green;
+}
+
+.amount {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amount span {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
+.btn {
+  right: 2px;
+}
+
+.btn button {
+  padding: 10px;
+  display: inline-block;
+  cursor: pointer;
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  border-radius: 3px;
+  border: none;
+  outline: none;
+  margin: 0;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+  padding: 30px;
+  border-radius: 15px;
+  background-color: #eaf0ef;
+  color: #504e4e;
+  font-weight: 600;
+  height: auto;
+}
+
+.form input {
+  width: 90%;
+  border-radius: 3px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  outline: none;
+  border: none;
+  font-family: "Indie Flower", cursive;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.btn-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-add button {
+  width: 300px;
+  height: 60px;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  background-color: #f84158;
+  color: white;
+  font-size: 18px;
+  font-family: "Indie Flower", cursive;
 }
